@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0.3em 0.4em;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+img{
+    max-width: 100%;
+    /* object-fit: contain; */
+    /* block-size: auto; */
+    border-radius: inherit;
+}
+/* font-family: "Fraunces", serif; */
+/* font-family: "Montserrat", sans-serif; */
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    /* min-height: 100vh; */
+    
+}
+.text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+}
+.title{
+    font-family: "Fraunces", serif;
+    /* font-size: clamp(1rem,0.8rem + 1vw,3rem); */
+    
+}
+.second--header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.second--box{
+    padding: 0 0.3em;
+    width: 95%;
+    margin: 0 auto;
+   
+    /* justify-content: space-between; */
+}
+.prices{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+}
+.second--price{
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+    color: hsl(158, 42%, 18%);
+}
+p + p{
+    margin-left: 1em;
+    text-decoration: line-through;
+}
+.cart--btn{
+    width: 100%;
+    padding: 0.6em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+@media (min-width : 800px){
+    body{
+        /* border: 1px solid red; */
+        /* margin: auto; */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+    }
+    .first--box{
+    }
+    img{
+        object-fit: cover;
+        /* aspect-ratio: 2/1; */
+        height: 100%;
+    }
+}
